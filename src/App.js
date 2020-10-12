@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
 import './App.css';
+import Header from './Components/Header/Header.js'
+import { api } from './Components/API/api'
+import Container from '@material-ui/core/Container';
+import Content from './Components/Content/Content'
 
-function App() {
+
+export default function App() {
+
+  const [matches, setMatches] = useState([]);
+
+  useEffect(() => {
+    api()
+	  .then((data) => setMatches(data.matches))      
+      .catch((error) => alert("couldn't load data"));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+		<div className="main">
+			<Container maxWidth="sm">
+				<div className="main-container">
+					<Header />
+					{matches.map((match) => {
+						if (match.type === "Twenty20") {
+							return (<Content key={match.unique_id} match={match} />)
+						}
+						else return null
+					}
+					)}
+				</div>
+			</Container>
+		</div>
   );
 }
-
-export default App;

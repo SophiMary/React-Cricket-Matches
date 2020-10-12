@@ -1,0 +1,25 @@
+.card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 0 0 20px;
+    justify-items: center;
+    align-items: center;
+    color: rgb(28, 28, 161);
+}
+
+.vs {
+    width: 120px;
+    height: 100px;
+}
+
+.card {
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-items: center;
+    color: rgb(172, 23, 23);
+}
