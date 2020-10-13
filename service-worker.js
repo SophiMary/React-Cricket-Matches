@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/React-Cricket-Matches/precache-manifest.6bc60005e43b604d5edfb9ab895955ad.js"
+  "/React-Cricket-Matches/precache-manifest.247ea57158b493086bea3093713f63ca.js"
 );
 
 self.addEventListener('message', (event) => {

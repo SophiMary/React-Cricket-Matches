@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab890db7c608a784989b611f84bc3a6b",
+    "revision": "0b358d71356650661792f08824ca3f4a",
     "url": "/React-Cricket-Matches/index.html"
   },
   {
-    "revision": "4c9ca1fd36bc932d362b",
+    "revision": "3e2e6dede759472fa0f6",
     "url": "/React-Cricket-Matches/static/css/main.182cf78b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/React-Cricket-Matches/static/js/2.f13124ef.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4c9ca1fd36bc932d362b",
-    "url": "/React-Cricket-Matches/static/js/main.d968f39a.chunk.js"
+    "revision": "3e2e6dede759472fa0f6",
+    "url": "/React-Cricket-Matches/static/js/main.49112992.chunk.js"
   },
   {
     "revision": "80f7a50bf0ede3e6ac49",
