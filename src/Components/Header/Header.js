@@ -10,7 +10,7 @@ export default function ButtonAppBar() {
       <AppBar position="static" className='root'>
         <Toolbar>
           <Typography variant="h6">
-            Cricket Matches 2020
+            Cricket 2020
           </Typography>
         </Toolbar>
       </AppBar>
